@@ -13,3 +13,13 @@
  * command-specific namespaces within this header, which can then be used where
  * they are needed.
  */
+namespace ClimbConstants
+{
+    const int ClimbMotor1Port = 8; 
+    const int ClimbMotor2Port = 9;
+    const int ClimbMotor3Port = 10;
+
+    static const int ClimbEncoderPorts [10]= {0,1,2,3,4,5,6,7,8,9};
+    static const int ClimbEncoderPorts [10]= {0,1,2,3,4,5,6,7,8,9};
+    //change to one port (new motor could be a falcon)
+}
