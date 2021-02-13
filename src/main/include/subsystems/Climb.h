@@ -2,9 +2,12 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
 
-#pragma once
+ #pragma once
 
-#include <frc2/command/SubsystemBase.h>
+ #include <frc2/command/SubsystemBase.h>
+ #include <frc/PWMTalonFX.h>
+ #include <frc/Encoder.h>
+
 
  class CLimb : public frc2::SubsystemBase {
  public:
@@ -42,6 +45,11 @@
   // declared private and exposed only through public methods.
 
  //Declares climb motor
-  frc::PWMTalonFX climbMotor;
+  frc::PWMTalonFX climbMotor1;
+  frc::PWMTalonFX climbMotor2;
+  frc::Encoder Climb1;
+  frc::Encoder Climb2;
+
+
 
 };
